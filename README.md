@@ -10,3 +10,26 @@ Phases of Compiler
   6. code Generation
 
 These are the phases to transform the source code into machine code
+
+1. LEXICAL ANALYSIS
+   ----------------
+   - Here the source code converted into tokens.
+   - Tokens are the smallest meaningful unit, can be as keywords, operators, punctuation, identifiers, constants
+   - lexical analyzer scans the code character by character and groups them into tokens based on language rules
+  
+     Example: int a = 20;
+     int - keyword token
+     a - identifier token
+     = - operator token
+     20 - Numeric literal token
+     ; - punctuation token
+     
+           
+     
+  
+
+
+
+
+
+
