@@ -11,7 +11,7 @@ Phases of Compiler
 
 These are the phases to transform the source code into machine code
 
-1. LEXICAL ANALYSIS
+1) LEXICAL ANALYSIS
    ----------------
    - Here the source code converted into tokens.
    - Tokens are the smallest meaningful unit, can be as keywords, operators, punctuation, identifiers, constants
@@ -23,3 +23,28 @@ These are the phases to transform the source code into machine code
      = - operator token
      20 - Numeric literal token
      ; - punctuation token
+
+2) SYNTAX ANALYSIS
+   ---------------
+   - Ensures the source code follows the grammatical rules of the programming language.
+   - Here uses Parse trees or Syntax trees
+
+   PARSE trees ->  
+      - tree-like structure which represents the synthetic structure of source code. 
+      - Shows how the tokens are related to grammar rules. 
+      - Each branch in the tree represents a production rule of the language, and the leaves/nodes represent the tokens
+
+  Syntax tree
+      - abstract version of parse tree.
+
+3) SEMANTIC ANALYSIS 
+   -----------------
+   - syntax analysis checks the structure of the program while semantics analysis checks its meaning 
+   - It verifies that the operations performed in the program are logically correct and follow the rules of the programming language in terms of data types and variable usage.
+   - Identifies errors suc h as type mismatches, invalid operations and undeclared variables
+   
+   Some key checks performed during semantic analysis include:
+
+  Type Checking: The compiler ensures that operations are performed on compatible data types. For example, trying to add a string and an integer would be flagged as an error because they are incompatible types.
+  
+  Variable Declaration: It checks whether variables are declared before they are used. For example, using a variable that has not been defined earlier in the code would result in a semantic error.
