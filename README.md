@@ -25,7 +25,10 @@ These are the phases to transform the source code into machine code
      ; - punctuation token
      
            
-     
+     2) SYNTAX ANALYSIS
+   ---------------
+   - Ensures the source code follows the grammatical rules of the programming language.
+   - Here uses Parse trees or Syntax trees
   
 
 
